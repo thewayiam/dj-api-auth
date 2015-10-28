@@ -1,6 +1,7 @@
 import os
 from setuptools import setup
-from djapiauth import __version__
+
+__version__ = '0.7'
 
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
@@ -19,6 +20,7 @@ setup(
     url='https://github.com/feifangit/dj-api-auth',
     author='Fan Fei',
     author_email='feifan.pub@gmail.com',
+    install_requires=['Django >= 1.7'],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
